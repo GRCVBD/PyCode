@@ -1,0 +1,188 @@
+/* 抖音视频解析下载器 - 深色现代主题 */
+
+/* 主窗口背景 */
+QMainWindow {
+    background-color: #1e1e2e;
+}
+
+/* 分组框 */
+QGroupBox {
+    font-weight: bold;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 12px;
+    padding: 0 8px;
+}
+
+/* 通用按钮 */
+QPushButton {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    border: none;
+    padding: 7px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #74c7ec;
+}
+
+QPushButton:pressed {
+    background-color: #b4befe;
+}
+
+QPushButton:disabled {
+    background-color: #45475a;
+    color: #6c7086;
+}
+
+/* 取消按钮 - 柔和红色 */
+QPushButton#cancel_btn {
+    background-color: #f38ba8;
+    color: #1e1e2e;
+}
+
+QPushButton#cancel_btn:hover {
+    background-color: #eba0ac;
+}
+
+QPushButton#cancel_btn:pressed {
+    background-color: #f5c2e7;
+}
+
+/* 下载按钮 - 绿色 */
+QPushButton#download_btn {
+    background-color: #a6e3a1;
+    color: #1e1e2e;
+}
+
+QPushButton#download_btn:hover {
+    background-color: #94e2d5;
+}
+
+/* 配置标签 - 可点击链接样式 */
+QLabel#config_label {
+    color: #89b4fa;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 4px 8px;
+}
+
+QLabel#config_label:hover {
+    color: #74c7ec;
+}
+
+/* 输入框 */
+QLineEdit {
+    padding: 6px;
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 6px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #89b4fa;
+}
+
+/* 日志区 */
+QTextEdit {
+    background-color: #181825;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 8px;
+    font-family: Consolas, "Microsoft YaHei", monospace;
+    padding: 8px;
+}
+
+/* 进度条 */
+QProgressBar {
+    text-align: center;
+    color: #cdd6f4;
+    background-color: #313244;
+    border: 1px solid #45475a;
+    border-radius: 6px;
+    padding: 2px;
+}
+
+QProgressBar::chunk {
+    background-color: #89b4fa;
+    border-radius: 4px;
+}
+
+/* 菜单栏 */
+QMenuBar {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+}
+
+QMenuBar::item:selected {
+    background-color: #313244;
+    border-radius: 4px;
+}
+
+/* 菜单 */
+QMenu {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 6px;
+}
+
+QMenu::item:selected {
+    background-color: #45475a;
+    border-radius: 4px;
+}
+
+/* 滚动条 */
+QScrollBar:vertical {
+    background-color: #181825;
+    width: 10px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #45475a;
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #585b70;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* 对话框 */
+QDialog {
+    background-color: #1e1e2e;
+}
+
+QLabel {
+    color: #cdd6f4;
+}
+
+/* 文件选择对话框相关 */
+QComboBox,
+QSpinBox,
+QDoubleSpinBox {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 6px;
+    padding: 4px;
+}
